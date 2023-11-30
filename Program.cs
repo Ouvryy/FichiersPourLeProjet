@@ -27,13 +27,13 @@ int[] BackFront(int n)
     if(input==8)
     {
         //on vérifie que c'est possible
-        for(int k=0,k<3,k++)
+        for(int k=0;k<3;k++)
         {  
-            for(int j=0,j<3,j++)
+            for(int j=0;j<3;j++)
             {
                 if(grille[j][k]==grill[j+1][k])
                 {
-                    grille[j+1][k]++;
+                    grille[j+1][k]= grille[j+1][k]*2;//clement ez ibra
                 }
             } 
         } 
