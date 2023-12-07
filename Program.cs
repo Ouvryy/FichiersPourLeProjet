@@ -1,13 +1,13 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
-n=10// nombres de coups
-Random rnd = new Random();
+int n=10;// nombres de coups
+Random rng = new Random();
 
 int[] BackFront(int n)
 {
     void InitilisationPartie()
     {
-        int[] grille= new int[]{{0,0,0,0};{0,0,0,0};{0,0,0,0};{0,0,0,0}};
+        int[][] grille= new int[][]{{0,0,0,0},{0,0,0,0},{0,0,0,0},{0,0,0,0}};
         int nb1 = rng.next(0,3);
         int nb2 = rng.next(0,3);
         int nb3 = rng.next(0,3);
